@@ -1,6 +1,7 @@
 # DevOps Learning Platform
-
 A modern frontend web application for learning DevOps concepts, tools, and practices. This platform provides an interactive learning experience with courses, mock interviews, and assessments.
+
+## 🛠️ Tech Stack
 <div align="center">
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -18,36 +19,34 @@ A modern frontend web application for learning DevOps concepts, tools, and pract
 ## 📸 Application Screenshots
 
 ### Home Page
-![Home Page](./project/image/Home.png)
+![Home Page](project/image/home.png)
 
 ### Dashboard
-![Dashboard](./public/images/Dashboard.png)
+![Dashboard](project/image/Dashboard.png)
 
 ### Login Page
-![Login](./public/images/Login.png)
+![Login](project/image/Login.png)
 
 ### Register Page
-![Register](./public/images/Register.png)
+![Register](project/image/Register.png)
 
 ### Courses
-![Courses](./public/images/course.png)
+![Courses](project/image/course.png)
 
 ### Mock Interview
-![Mock Interview](./public/images/MockInterview.png)
+![Mock Interview](project/image/MockInterview.png)
 
 ### Test Series
-![Test Series](./public/images/TestSeries.png)
+![Test Series](project/image/TestSeries.png)
 
 ### Contact Page
-![Contact](./public/images/Contact.png)
+![Contact](project/image/Contact.png)
 
 ### Header
-![Header](./public/images/Header.png)
+![Header](project/image/Header.png)
 
 ### Footer
-![Footer](./public/images/Footer.png)
-
-## 🛠️ Tech Stack
+![Footer](project/image/Footer.png)
 
 
 ## ✨ Features
