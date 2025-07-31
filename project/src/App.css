@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Custom scrollbar with Odoo colors */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F4F7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #714B67;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #875A7B;
+}
+
+/* Smooth transitions for all elements */
+* {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Odoo-style button base */
+.btn-odoo {
+  @apply px-6 py-3 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+}
+
+.btn-primary {
+  @apply bg-odoo-primary text-white hover:bg-odoo-secondary focus:ring-odoo-primary shadow-odoo;
+}
+
+.btn-secondary {
+  @apply bg-white text-odoo-primary border-2 border-odoo-primary hover:bg-odoo-light focus:ring-odoo-primary;
+}
+
+.btn-accent {
+  @apply bg-odoo-accent text-white hover:bg-odoo-dark focus:ring-odoo-accent shadow-odoo;
+}
+
+/* Odoo-style cards */
+.card-odoo {
+  @apply bg-white rounded-xl shadow-odoo hover:shadow-odoo-lg transition-all duration-300;
+}
+
+.card-odoo-interactive {
+  @apply card-odoo hover:transform hover:-translate-y-1 cursor-pointer;
+}
+
+/* Odoo-style inputs */
+.input-odoo {
+  @apply w-full px-4 py-3 border border-odoo-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-odoo-primary focus:border-odoo-primary transition-colors bg-white;
+}
+
+/* Gradient backgrounds */
+.bg-odoo-gradient {
+  background: linear-gradient(135deg, #714B67 0%, #875A7B 100%);
+}
+
+.bg-odoo-gradient-light {
+  background: linear-gradient(135deg, #F8F4F7 0%, #FFFFFF 100%);
+}
+
+/* Text gradients */
+.text-odoo-gradient {
+  background: linear-gradient(135deg, #714B67 0%, #875A7B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Loading spinner with Odoo colors */
+.loading-spinner {
+  border: 3px solid #F8F4F7;
+  border-top: 3px solid #714B67;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Hover effects */
+.hover-lift {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+/* Status badges */
+.badge-success {
+  @apply bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.badge-warning {
+  @apply bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.badge-error {
+  @apply bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.badge-info {
+  @apply bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium;
+}
+
+/* Progress bars */
+.progress-bar {
+  @apply w-full bg-odoo-gray-200 rounded-full h-2;
+}
+
+.progress-fill {
+  @apply bg-odoo-gradient h-2 rounded-full transition-all duration-500;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Custom focus styles */
+.focus-odoo:focus {
+  @apply outline-none ring-2 ring-odoo-primary ring-offset-2;
+}
+
+/* Backdrop blur for modals/overlays */
+.backdrop-blur-odoo {
+  backdrop-filter: blur(8px);
+  background-color: rgba(113, 75, 103, 0.1);
+}
